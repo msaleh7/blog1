@@ -62,7 +62,7 @@ if (isset($_POST['post']))
 	</form>
 
 	<?php 
-	$sql = "SELECT * FROM posts ORDER BY ID DESC";
+	$sql = "SELECT * FROM posts ORDER BY ID DESC;";
 	$results = mysqli_query($dbconn, $sql) or die(mysqli_errno());
 	
 	$posts = "";
