@@ -27,6 +27,29 @@ if ($conn->connect_error) {
 }
 
 
+
+
+$sql = "SELECT * FROM posts ORDER BY ID DESC";
+$results = mysqli_query($dbconn, $sql) or die(mysqli_errno());
+
+$posts = "";
+
+if (mysqli_num_rows($results) > 0){
+    while ($rows = mysqli_fetch_assoc($results))
+    {
+        $ID = $rows['ID'];
+        $title = $rows['Title'];
+        $Content = $rows['Content'];
+        $Date = $rows['Date'];
+        
+        
+        $posts .= "<div><h2><a href = 'view_post.php?pid=$ID'>$title</a></h2><h3>$Date</h3><p>$Content</p></div>";
+    }
+    echo $posts;
+} else
+{"There are no posts to display";}
+
+
 ?>
 
 
