@@ -9,7 +9,7 @@
 $serverName = "mysqldb7.mysql.database.azure.com"; // update me
 $connectionOptions = array(
 "Database" => "blogdb", // db name
-"Uid" => "msaleh7", // update me
+"Uid" => "msaleh7@mysqldb7", // update me
 "PWD" => "Msm@9810959" // update me
 );
 //Establishes the connection
