@@ -13,7 +13,7 @@ $conn = new mysqli();
 $conn->init();
 
 // below contains certificate path required in azure
-$db_ca_cert = realpath('C:/SSL/BaltimoreCyberTrustRoot.crt.pem');
+$db_ca_cert = realpath('BaltimoreCyberTrustRoot.crt.pem');
 $conn->ssl_set(NULL,NULL, $db_ca_cert, NULL, NULL); // set SSL options //AES256-SHA
 
 //$conn->ssl_set(NULL,NULL, "AES256-SHA", NULL, NULL); // set SSL options //AES256-SHA
