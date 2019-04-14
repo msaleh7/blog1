@@ -8,9 +8,9 @@
 
 $serverName = "mysqldb7.mysql.database.azure.com"; // update me
 $connectionOptions = array(
-"Database" => "mysqldb7", // db name
-"Uid" => "msaleh7", // update me
-"PWD" => "Msm@9810959" // update me
+"Database" => "blogDB", // db name
+"Uid" => "phpappuser1", // update me
+"PWD" => "MySQLAzure2017" // update me
 );
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
